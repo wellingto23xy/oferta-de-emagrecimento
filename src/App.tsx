@@ -9,12 +9,6 @@ import { Check, X, ChevronDown, Play, Star, MessageCircle, Instagram } from 'luc
 
 const WistiaPlayer = 'wistia-player' as any;
 
-declare global {
-  interface Window {
-    ttq: any;
-  }
-}
-
 interface FAQItemProps {
   question: string;
   answer: string;
@@ -374,11 +368,6 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 ref={buyButtonRef as any}
-                onClick={() => {
-                  if (window.ttq) {
-                    window.ttq.track('InitiateCheckout');
-                  }
-                }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-brand-green text-white font-black py-4 rounded-xl shadow-xl uppercase text-lg mb-2 flex items-center justify-center"
