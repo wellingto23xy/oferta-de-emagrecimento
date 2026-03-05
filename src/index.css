@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-orange: #FF7A00;
+  --color-brand-green: #3E7B27;
+  --color-brand-bg: #FDFBF0;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-bg text-slate-900 font-sans;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+wistia-player[media-id='cr897dvdbz']:not(:defined) {
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/cr897dvdbz/swatch');
+  display: block;
+  filter: blur(5px);
+  padding-top: 178.06%;
+}
+
+wistia-player[media-id='kxeqzov5qy']:not(:defined) {
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/kxeqzov5qy/swatch');
+  display: block;
+  filter: blur(5px);
+  padding-top: 177.78%;
+}
